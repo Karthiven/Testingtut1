@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="password" value="manager"/>
+  <parameter name="username" value="admin"/>
+  <listeners>
+    <listener class-name="utility.Listning"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="password" value="manager"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="Acti_login_test.Acti_loginmod__test">
+        <methods>
+          <include name="mforlist"/>
+          <include name="ivalpw_valun"/>
+          <include name="setUp"/>
+          <include name="ivalun_valpw"/>
+          <include name="val_unpw" invocation-numbers="0"/>
+          <include name="insval_unpw" invocation-numbers="0 1"/>
+          <include name="launchActi"/>
+          <include name="fvalun_fvalpw"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Acti_login_test.Acti_loginmod__test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
